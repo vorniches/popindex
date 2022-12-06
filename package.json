@@ -1,6 +1,6 @@
 {
   "name": "popindex",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A package to manage z-index values on a page.",
   "main": "index.js",
   "directories": {
