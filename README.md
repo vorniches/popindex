@@ -48,7 +48,8 @@ element.style.zIndex = nextZIndex;
 ```
 
 This example gets the next available z-index using the getMaxZIndex() method, and then sets the z-index of an element using the returned value.
-Contributing
+
+## Contributing
 
 If you find a bug or have an idea for a new feature, please open an issue or pull request on the GitHub repository.
 
