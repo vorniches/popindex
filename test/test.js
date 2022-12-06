@@ -2,7 +2,7 @@ describe('popindexManager', () => {
     let popindexManager;
   
     beforeEach(() => {
-        popindexManager = new popindexManager();
+        popindexManager = new popindex();
     });
   
     it('should get the next available z-index', () => {
