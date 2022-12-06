@@ -1,4 +1,4 @@
-# popindexManager
+# popindex
 
 A JavaScript package to manage z-index values on a page.
 
