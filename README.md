@@ -10,8 +10,9 @@ To use the popindexManager, you would first need to install the package using np
 npm install popindexmanager
 ```
 
+Import the class into your JavaScript code
+
 ```JavaScript
-// Import the class into your JavaScript code
 import popindexManager from 'popindexmanager';
 ```
 
