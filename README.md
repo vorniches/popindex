@@ -13,7 +13,7 @@ npm install popindex
 Import the class into your JavaScript code
 
 ```JavaScript
-import popindexManager from 'popindex';
+import popindex from 'popindex';
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ import popindexManager from 'popindex';
 To use the `popindex`, first create an instance of it:
 
 ```JavaScript
-const popindexManager = new popindex();
+const popindexManager = new Popindex();
 ```
 
 You can then call the getMaxZIndex() method to get the next available z-index value:
@@ -37,7 +37,7 @@ This method will return the maximum z-index on the page plus one, by looping thr
 Here is an example of how to use the `popindex` to set the z-index of an element:
 
 ```JavaScript
-const popindexManager = new popindex();
+const popindexManager = new Popindex();
 
 // Get the next available z-index
 const nextZIndex = popindexManager.getMaxZIndex();
@@ -51,7 +51,7 @@ This example gets the next available z-index using the getMaxZIndex() method, an
 
 ## Contributing
 
-If you find a bug or have an idea for a new feature, please open an issue or pull request on the GitHub repository.
+If you find a bug or have an idea for a new feature, please open an issue or pull request on the [GitHub repository](https://github.com/vorniches/popindex).
 
 ## License
 
