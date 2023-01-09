@@ -9,45 +9,44 @@ To use the `popindex`, you would first need to install the package using npm ins
 ```
 npm install popindex
 ```
-
-Import the class into your JavaScript code
-
-```JavaScript
-import popindex from 'popindex';
-```
-
 ## Usage
 
-To use the `popindex`, first create an instance of it:
+To use `popindex`, import it in your JavaScript file and create a new instance of `ZIndexManager`:
 
-```JavaScript
-const popindexManager = new Popindex();
+```javascript
+import ZIndexManager from 'popindex';
+
+const zIndexManager = new ZIndexManager();
 ```
 
-You can then call the getMaxZIndex() method to get the next available z-index value:
+## ZIndexManager
 
-```JavaScript
-const nextZIndex = popindexManager.getMaxZIndex();
-```
+### Properties
 
-This method will return the maximum z-index on the page plus one, by looping through all elements on the page and finding the maximum z-index value.
+- `baseUrl`: The base URL to use for resolving relative URLs when analyzing pages from a URL.
+
+### Methods
+
+- `getMaxZIndex()`: Returns the maximum z-index on the current page.
+- `getMaxZIndexFromUrl()`: Returns the maximum z-index on the page at the specified URL.
 
 ## Examples
 
-Here is an example of how to use the `popindex` to set the z-index of an element:
+```javascript
+import ZIndexManager from 'popindex';
 
-```JavaScript
-const popindexManager = new Popindex();
+// Create a new ZIndexManager instance
+const zIndexManager = new ZIndexManager();
 
-// Get the next available z-index
-const nextZIndex = popindexManager.getMaxZIndex();
+// Get the maximum z-index on the current page
+const maxZIndex = zIndexManager.getMaxZIndex();
+console.log(maxZIndex); // Outputs the maximum z-index + 1
 
-// Set the z-index of an element
-const element = document.querySelector('.my-element');
-element.style.zIndex = nextZIndex;
+// Get the maximum z-index on the page at the specified URL
+const baseUrl = 'http://example.com';
+const maxZIndexFromUrl = await zIndexManager.getMaxZIndexFromUrl(baseUrl);
+console.log(maxZIndexFromUrl); // Outputs the maximum z-index + 1
 ```
-
-This example gets the next available z-index using the getMaxZIndex() method, and then sets the z-index of an element using the returned value.
 
 ## Contributing
 
